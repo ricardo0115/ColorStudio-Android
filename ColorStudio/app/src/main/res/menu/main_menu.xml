@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:icon="@android:drawable/ic_menu_manage"
+        android:title="Settings"
+        android:visible="true"
+        app:showAsAction="always">
+        <menu>
+            <item
+                android:id="@+id/ImDims"
+                android:title="Show image dimensions"
+                android:visible="true"
+                app:showAsAction="never" />
+            <item
+                android:id="@+id/RotateImRight"
+                android:title="Rotate 90° Right"
+                android:visible="true"
+                app:showAsAction="never" />
+            <item
+                android:id="@+id/RotateImLeft"
+                android:title="Rotate 90° Left"
+                android:visible="true"
+                app:showAsAction="never" />
+            <group>
+                <item
+                    android:id="@+id/HistOptions"
+                    android:title="Histogram options"
+                    android:visible="true"
+                    app:showAsAction="never">
+                    <menu>
+                        <item
+                            android:id="@+id/KeepRedBins"
+                            android:title="Show red bins"
+                            android:visible="true"
+                            app:showAsAction="never" />
+                        <item
+                            android:id="@+id/KeepGreenBins"
+                            android:title="Show green bins"
+                            android:visible="true"
+                            app:showAsAction="never" />
+                        <item
+                            android:id="@+id/KeepBlueBins"
+                            android:title="Show blue bins"
+                            android:visible="true"
+                            app:showAsAction="never" />
+                        <item
+                            android:id="@+id/KeepAllBins"
+                            android:title="Show RGB bins"
+                            android:visible="true"
+                            app:showAsAction="never" />
+                        <item
+                            android:id="@+id/KeepLumBins"
+                            android:title="Show luminance histogram"
+                            android:visible="true"
+                            app:showAsAction="never" />
+                    </menu>
+                </item>
+            </group>
+            <item
+                android:id="@+id/ScaleSwitch"
+                android:title="Turn Scaling On/Off "
+                android:visible="true"
+                app:showAsAction="never" />
+            <item
+                android:id="@+id/RenderScriptMode"
+                android:title="RenderScript Mode "
+                android:visible="true"
+                app:showAsAction="never" />
+        </menu>
+    </item>
+    <item
+        android:id="@+id/LoadImage"
+        android:icon="@android:drawable/ic_menu_gallery"
+        android:title="Load image from gallery"
+        android:visible="true"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/UndoChangesItem"
+        android:icon="@drawable/ic_settings_backup_restore_black_24dp"
+        android:title="Undo Changes"
+        android:visible="true"
+        app:showAsAction="always" />
+    <item
+        android:icon="@drawable/ic_brush_black_24dp"
+        android:title="Filters"
+        android:visible="true"
+        app:showAsAction="always">
+        <menu>
+            <item
+                android:id="@+id/ToGrayItem"
+                android:title="To gray"
+                android:visible="true"
+                app:showAsAction="never" />
+            <item
+                android:id="@+id/ColorizeItem"
+                android:title="Random colorize"
+                android:visible="true"
+                app:showAsAction="never" />
+            <item
+                android:id="@+id/ColorTweaks"
+                android:title="Color Tweaks"
+                android:visible="true"
+                app:showAsAction="never" />
+            <group>
+                <item
+                    android:id="@+id/DynContrastsModifier"
+                    android:title="Dynamic extension contrasts"
+                    android:visible="true"
+                    app:showAsAction="never">
+                    <menu>
+                        <item
+                            android:id="@+id/GrayContrastAug"
+                            android:title="Gray Contrast ++"
+                            android:visible="true"
+                            app:showAsAction="never" />
+                        <item
+                            android:id="@+id/GrayContrastLower"
+                            android:title="Gray Contrast --"
+                            android:visible="true"
+                            app:showAsAction="never" />
+                        <item
+                            android:id="@+id/RGBContrastAug"
+                            android:title="RGB Color Contrast ++"
+                            android:visible="true"
+                            app:showAsAction="never" />
+                        <item
+                            android:id="@+id/RGBContrastLower"
+                            android:title="RGB Color Contrast --"
+                            android:visible="true"
+                            app:showAsAction="never" />
+                        <item
+                            android:id="@+id/HSVContrastAug"
+                            android:title="HSV Color Contrast ++"
+                            android:visible="true"
+                            app:showAsAction="never" />
+                        <item
+                            android:id="@+id/HSVContrastLower"
+                            android:title="HSV Color Contrast --"
+                            android:visible="true"
+                            app:showAsAction="never" />
+                    </menu>
+                </item>
+            </group>
+            <group>
+                <item
+                    android:id="@+id/EqualizationContrastsModifier"
+                    android:title="Equalization contrasts"
+                    android:visible="true"
+                    app:showAsAction="never">
+                    <menu>
+                        <item
+                            android:id="@+id/EGrayContrastAug"
+                            android:title="Gray Contrast ++"
+                            android:visible="true"
+                            app:showAsAction="never" />
+                        <item
+                            android:id="@+id/RGBAvgContrastAug"
+                            android:title="(RGB average) Color Contrast ++"
+                            android:visible="true"
+                            app:showAsAction="never" />
+                        <item
+                            android:id="@+id/EQHSVContrastAug"
+                            android:title="(HSV) Color Contrast ++"
+                            android:visible="true"
+                            app:showAsAction="never" />
+                    </menu>
+                </item>
+            </group>
+            <group>
+                <item
+                    android:id="@+id/Convolution"
+                    android:title="Convolution Filters"
+                    android:visible="true"
+                    app:showAsAction="never">
+                    <menu>
+                        <item
+                            android:id="@+id/convolveEdges"
+                            android:title="Edges detection (Laplace kernel)"
+                            android:visible="true"
+                            app:showAsAction="never" />
+                        <item
+                            android:id="@+id/convolveBlurry"
+                            android:title="Blur effect"
+                            android:visible="true"
+                            app:showAsAction="never" />
+                    </menu>
+                </item>
+            </group>
+        </menu>
+    </item>
+</menu>

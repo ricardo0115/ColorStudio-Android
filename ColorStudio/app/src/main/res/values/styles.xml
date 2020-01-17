@@ -1,0 +1,45 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light">
+        <!-- Customize your theme here. -->
+        <item name="colorControlNormal">@color/title_color</item>
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="actionBarPopupTheme">@style/SubmenuHeaderStyle</item>
+        <item name="android:itemBackground">@color/colorPrimary</item>
+        <item name="android:itemTextAppearance">@style/itemMenuText</item>
+        <item name="android:actionMenuTextAppearance">@style/itemMenuText</item>
+
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowCloseOnTouchOutside">true</item>
+    </style>
+
+    <style name="TextAppearance.AppCompat.Widget.ActionBar.Title" parent="@android:style/TextAppearance">
+        <item name="android:textSize">20dp</item>
+        <item name="android:textColor">@color/title_color</item>
+        <item name="android:fontFamily">monospace</item>
+    </style>
+
+    <style name="itemMenuText" parent="@android:style/TextAppearance.Widget.IconMenu.Item">
+        <item name="android:textColorPrimary">@color/title_color</item>
+        <item name="android:textColorSecondary">@color/title_color</item>
+        <item name="android:textColor">@color/title_color</item>
+        <item name="android:fontFamily">monospace</item>
+    </style>
+
+    <style name="SubmenuHeaderStyle" parent="ThemeOverlay.AppCompat.Light">
+        <item name="android:colorBackground">@color/colorPrimary</item>
+        <item name="android:textColorPrimary">@color/title_color</item>
+        <item name="android:textColorSecondary">@color/title_color</item>
+        <item name="android:textColor">@color/title_color</item>
+        <item name="android:fontFamily">monospace</item>
+        <item name="android:textStyle">bold</item>
+
+    </style>
+
+
+
+</resources>
+
